@@ -1,0 +1,102 @@
+﻿body {
+    background: black;
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    grid-template-areas:
+        'a a a'
+        'b b b'
+        'c d e'
+        'f g h'
+        'i i i';
+    
+}
+
+h1{
+    grid-area: a;
+    margin-bottom: 0;
+    background: white;
+    padding-left: 40px;     
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.headlogo {
+    width: 300px;
+}
+
+#banner {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    text-align: center;
+    background: darkgrey;
+    grid-area: b;
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+li:hover {
+    color: lightgray;
+}
+.btn {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 200px;
+}
+
+
+#prodImage1 {
+    grid-area:c;
+    width: 400px;
+}
+
+#prodImage2 {
+    grid-area: d;
+    width: 400px;
+}
+
+#prodImage3 {
+    grid-area: e;
+    width: 400px;
+}
+
+.prodInfo {
+    color: lightgray;    
+}
+
+#prodInfo1 {
+    grid-area: f;
+}
+
+#prodInfo2 {
+    grid-area: g;
+}
+
+#prodInfo3 {
+    grid-area: h;
+}
+
+
+.footer {
+    grid-area: i;
+    color: darkgray;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 300px;
+    margin-top: 0;
+    padding: 0 20px;
+    list-style: none;
+}
+
+
+
+
