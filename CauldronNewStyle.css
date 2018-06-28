@@ -3,15 +3,15 @@
     font-family: 'Playfair Display', serif;
     display: grid;
     grid-template-areas: 'a a a' 'b b b' 'c c c' 'd d d' 'e e e';
-    
 }
+
 .header {
     grid-area: a;
 }
-h1{
+h1 {
     margin-bottom: 0;
     background: white;
-    padding-left: 40px;     
+    padding-left: 40px;
     padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -22,24 +22,28 @@ h1{
     width: 300px;
 }
 
+.nav {
+    grid-area: b;
+}
+
 #banner {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     text-align: center;
     background: darkgrey;
-    grid-area: b;
     width: 100%;
 }
 
 a {
     color: white;
     text-decoration: none;
-    
+}
+
 a:hover {
     color: dimgray;
 }
-}
+
 .btn {
     color: #FFF;
     font-size: 30px;
@@ -48,13 +52,6 @@ a:hover {
     display: inline-block;
     width: 200px;
 }
-
-
-#prodImage1 {
-    grid-area:c;
-    width: 400px;
-}
-
 .prodImage {
     grid-area: c;
     display: flex;   
@@ -83,23 +80,29 @@ a:hover {
     grid-area: d;
     display: flex;
     
+    
 }
+
 #prodInfo1 {
     width: 500px;
     margin-left: auto;
     margin-right: auto;
+    padding: 15px;
 }
 
 #prodInfo2 {
     width: 500px;
     margin-left: auto;
     margin-right: auto;
+    padding: 15px;
 }
 
 #prodInfo3 {
     width: 500px;
     margin-left: auto;
     margin-right: auto;
+    padding: 15px;
+
 }
 
 
@@ -116,7 +119,4 @@ a:hover {
     float: left;
     
 }
-
-
-
 
