@@ -35,9 +35,10 @@ h1{
 a {
     color: white;
     text-decoration: none;
+    
+a:hover {
+    color: dimgray;
 }
-li:hover {
-    color: lightgray;
 }
 .btn {
     color: #FFF;
