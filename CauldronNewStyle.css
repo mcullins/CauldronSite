@@ -2,17 +2,13 @@
     background: black;
     font-family: 'Playfair Display', serif;
     display: grid;
-    grid-template-areas:
-        'a a a'
-        'b b b'
-        'c d e'
-        'f g h'
-        'i i i';
+    grid-template-areas: 'a a a' 'b b b' 'c c c' 'd d d' 'e e e';
     
 }
-
-h1{
+.header {
     grid-area: a;
+}
+h1{
     margin-bottom: 0;
     background: white;
     padding-left: 40px;     
@@ -58,35 +54,56 @@ li:hover {
     width: 400px;
 }
 
+.prodImage {
+    grid-area: c;
+    display: flex;   
+}
+
+#prodImage1 {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #prodImage2 {
-    grid-area: d;
-    width: 400px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #prodImage3 {
-    grid-area: e;
-    width: 400px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .prodInfo {
-    color: lightgray;    
+    color: lightgray;
+    grid-area: d;
+    display: flex;
+    
 }
-
 #prodInfo1 {
-    grid-area: f;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #prodInfo2 {
-    grid-area: g;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #prodInfo3 {
-    grid-area: h;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .footer {
-    grid-area: i;
+    grid-area: e;
     color: darkgray;
     font-size: 20px;
     font-weight: 300;
@@ -95,6 +112,8 @@ li:hover {
     margin-top: 0;
     padding: 0 20px;
     list-style: none;
+    float: left;
+    
 }
 
 
