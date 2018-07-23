@@ -1,21 +1,40 @@
-﻿body {
-    background: black;
+body {
+    background-color: red;
     font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid{
+    margin:0;
+    padding:0;
+    width: 100%;
+    
+}
+/*index CSS*/
+#index-container{
     display: grid;
-    grid-template-areas: 'a a a' 'b b b' 'c c c' 'd d d' 'e e e';
+    grid-template-areas: 'a a a' 'b b b' 'c c c' 'd d d' 'e e e' 'f f f';
+   
 }
 
 .header {
     grid-area: a;
 }
-h1 {
-    margin-bottom: 0;
+.sticky-menu {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+    
+}
+#sticky-h1 {
+    margin: 0 auto 0 auto;
     background: white;
     padding-left: 40px;
     padding-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
+   
 }
 
 .headlogo {
@@ -27,12 +46,11 @@ h1 {
 }
 
 #banner {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
+    margin: 0 auto 0 auto;
     text-align: center;
     background: darkgrey;
     width: 100%;
+    position: fixed;
 }
 
 a {
@@ -55,68 +73,124 @@ a:hover {
 .prodImage {
     grid-area: c;
     display: flex;   
+    margin-top: 200px;
+    
 }
 
 #prodImage1 {
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 25%;
+    
 }
 
 #prodImage2 {
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 25%;
+   
 }
 
 #prodImage3 {
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 25%;
+   
 }
 
 .prodInfo {
     color: lightgray;
     grid-area: d;
     display: flex;
-    
-    
+       
 }
 
 #prodInfo1 {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 25%;
+    
     padding: 15px;
+    text-align: justify;
 }
 
 #prodInfo2 {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 25%;
     padding: 15px;
+    text-align: justify;
 }
 
 #prodInfo3 {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+     width: 25%;
     padding: 15px;
+    text-align: justify;
+}
+
+.blog {
+    grid-area: e;
+    padding-bottom: 20px;
+    width: 80%;
+    text-align: justify;
+    margin-left:auto;
+    margin-right: auto;
+}
+#blog-header {
+    background-color: lightgrey;
+    color: black;
+    padding: 10px;
+    margin-bottom:0;
+}
+#blog-body{
+    background-color: grey;
+    color: black; 
+    padding: 20px;
+    margin-top: 0;
 
 }
 
-
 .footer {
-    grid-area: e;
-    color: darkgray;
     font-size: 20px;
     font-weight: 300;
     text-transform: uppercase;
-    width: 300px;
-    margin-top: 0;
+    width: 30%;
+    margin-left: 170px;
     padding: 0 20px;
     list-style: none;
     float: left;
     
 }
 
+footer {
+    grid-area: f;
+    width: 100%;
+    background-color: gray;
+}
+
+/*Privacy CSS*/
+
+#privacy-container {
+    color: white;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    display: grid;
+   
+}
+#privacy-header{
+    color:black;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 50px;
+    background-color: red;
+
+}
+
+#terms-container {
+    color: red;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    display: grid;
+}
+
+#terms-header {
+    color: black;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 50px;
+    background-color: red;
+}
